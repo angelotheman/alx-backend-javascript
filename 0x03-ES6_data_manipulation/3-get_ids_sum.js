@@ -3,7 +3,7 @@ export default function getStudentIdsSum(students) {
     return [];
   }
 
-  const result = students.reduce((acc, curr) => acc.id + curr.id, 0);
+  const result = students.reduce((acc, curr) => acc + curr.id, 0);
 
   return result;
 }
